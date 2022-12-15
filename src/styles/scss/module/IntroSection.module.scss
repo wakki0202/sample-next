@@ -1,0 +1,19 @@
+@use 'src/styles/scss/utils/index.scss' as *;
+
+
+.IntroBox{
+ margin-top: 80px;
+ margin-bottom: 80px;
+}
+
+.IntroImg{
+  width: 760px;
+  margin: auto;
+}
+
+.Achivement{
+  text-align: center;
+  font-size: 11px;
+  color: #6D6D6D;
+  margin-top: 25px;
+}
