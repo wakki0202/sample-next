@@ -10,6 +10,10 @@
   padding-bottom: 40px;
   width: 960px;
   margin: 0 auto;
+
+  @include mq(sp) {
+      width: 100%;
+    }
 }
 
 
@@ -17,6 +21,18 @@
 .OverviewTitleImg{
   width: 537px;
   margin: 0 auto;
+  @include mq(sp) {
+      display: none;
+    }
+}
+
+.SPOverviewTitleImg {
+  display: none;
+  @include mq(sp) {
+      display: block;
+      width: 90%;
+      margin: auto;
+    }
 }
 
 .ExclusiveImgList{
@@ -24,8 +40,19 @@
   margin-top: 40px;
   gap: 20px;
 
+  @include mq(sp) {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+    }
+
   div{
     width: 335px;
+
+    @include mq(sp) {
+        width: 90%;
+        margin: auto;
+      }
   }
 
   p{

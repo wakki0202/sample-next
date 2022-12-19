@@ -12,6 +12,7 @@ export default function Home() {
 
           <picture className="">
             <img src="exclusive_text_title_1440px.png" alt="" className={OverviewSection.OverviewTitleImg} />
+            <img src="exclusive_text_title_375px.png" alt="" className={OverviewSection.SPOverviewTitleImg} />
           </picture>
 
           <div className={OverviewSection.ExclusiveImgList} >
