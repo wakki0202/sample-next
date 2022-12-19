@@ -1,6 +1,8 @@
+@use 'src/styles/scss/utils/index.scss' as *;
 
 .RecommendSection{
  background-color: #F1574D;
+
 
 
 .RecommendWrap{
@@ -10,6 +12,22 @@ width: 1360px;
 margin: 0 auto;
 padding-top: 40px;
 padding-bottom: 80px;
+
+
+.PCStyle{
+  @include mq(sp) {
+      display: none;
+    }
+}
+
+.SPStyle{
+  display: none;
+
+  @include mq(sp) {
+      display: block;
+    }
+}
+
 }
 
 .RecommendTitleImg{
@@ -43,6 +61,32 @@ padding-bottom: 80px;
     margin:  auto;
 }
 
+}
+
+
+.SPRecommendTitleImg{
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.SPRecommendImg1{
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.SPRecommendImg2 {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.SPRecommendImg3 {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 }
