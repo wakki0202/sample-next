@@ -5,21 +5,44 @@
 position: relative;
 }
 
- .cta_btn {
+.PCver{
+  @include mq(sp) {
+      display: none;
+    }
+}
+
+.SPver{
+  display: none;
+  @include mq(sp) {
+      display: block;
+    }
+}
+
+ .CtaBtn {
    position: absolute;
    bottom: 7vw;
    right: 13vw;
+
+  @include mq(sp) {
+      transform: translateX(50%);
+      bottom: 51vw;
+      right: 50%;
+    }
  }
 
- .box{
+ .Box{
   position: relative;
     border-radius: 94px;
     font-weight: 700;
     width: calcVw(430, 1440);
     transition-duration: 0.2s;
 
+    @include mq(sp) {
+        border-radius: calcVw(70, 375);
+        width: calcVw(300, 375);
+      }
 
-    .balloon {
+    .Balloon {
         z-index: 1;
         width: 10.0555555556vw;
         position: absolute;
@@ -27,11 +50,14 @@ position: relative;
         transform: translate(-50%, -50%);
         left: 23%;
 
+        @include mq(sp) {
+            width: 25vw;
+          }
         
     }
  
 
- .container {
+ .Container {
    display: flex;
    gap: calcVw(13, 1440);
    justify-content: center;
@@ -43,13 +69,27 @@ position: relative;
    max-width: 720px;
    width: 100%;
    padding: calcVw(25, 1440) 0;
+
+  @include mq(sp) {
+      gap: calcVw(10, 375);
+      border-radius: calcVw(94, 375);
+      padding: calcVw(18, 375) 0;
+    }
  }
 
  .BalloonImg {
    width: calcVw(27, 1440);
+
+  @include mq(sp) {
+      width: calcVw(20, 375);
+    }
  }
  .TextImg{
   width: calcVw(216, 1440);
+
+  @include mq(sp) {
+      width: calcVw(152, 375);
+    }
  }
 
 }
