@@ -4,16 +4,24 @@
 .CurriculumSection{
 margin-top: 80px;
 margin-bottom: 80px;
+
+@include mq(sp) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 .TitleImg{
   width: 500px;
   margin: 0 auto;
   margin-bottom: 20px;
+
+  @include mq(sp) {
+      width: 90%;
+    }
 }
 
 .TitleText{
-  font-size: 16px;
   text-align: center;
 }
 
@@ -21,13 +29,35 @@ margin-bottom: 80px;
   width: 73%;
   margin: auto;
   margin-top: 40px;
+
+  @include mq(sp) {
+      width: 90%;
+    }
+
 .ContentImg1{
   margin-bottom: 16px;
+
+  @include mq(sp) {
+      display: none;
+    }
+}
+
+.SPContentImg1{
+  display: none;
+  @include mq(sp) {
+      display: block;
+      margin-bottom: 16px;
+    }
 }
 
 p{
   font-size: 10px;
   text-align: right;
+
+  @include mq(sp) {
+    font-size: 12px;
+    text-align: left;
+    }
 }
 
 }
@@ -38,9 +68,46 @@ p{
   margin: auto;
   margin-top: 60px;
   margin-bottom: 60px;
+
+  @include mq(sp) {
+      width: 90%;
+      margin-top: 40px;
+    }
+
+  .ContentImg2 {
+      @include mq(sp) {
+        display: none;
+      }
+    }
+  
+    .SPContentImg2 {
+      display: none;
+  
+      @include mq(sp) {
+        display: block;
+      }
+    }
 }
 
 .Content3 {
   width: 60%;
   margin: auto;
+
+  @include mq(sp) {
+      width: 90%;
+    }
+
+  .ContentImg3{
+    @include mq(sp) {
+        display: none;
+      }
+  }
+
+  .SPContentImg3 {
+      display: none;
+
+      @include mq(sp) {
+          display: block;
+        }
+    }
 }
