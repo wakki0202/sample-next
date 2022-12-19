@@ -14,6 +14,9 @@ padding: 27px 0;
   width: 387px;
   margin: auto;
   margin-bottom: 60px;
+  @include mq(sp) {
+      width: 80%;
+    }
 }
 
 .CtaBtn{
@@ -34,8 +37,7 @@ padding: 27px 0;
       left: 45%;
   
       @include mq(sp) {
-        width: calcVw(200, 375);
-        left: 53%;
+        width: 30%;
       }
     }
 
@@ -65,10 +67,9 @@ padding: 27px 0;
           box-shadow:  5px 5px #4A972F;
     
            @include mq(sp) {
-             gap: calcVw(10, 375);
              border-radius: calcVw(94, 375);
              width: 100%;
-             padding: calcVw(15, 375) calcVw(28, 375) calcVw(15, 375) calcVw(100, 375);
+             padding: 6vw 20vw 6vw 26.6666666667vw;
            }
     
            &:hover {
@@ -95,7 +96,12 @@ padding: 27px 0;
 }
 
 
-
+.pc_none{
+  display: none;
+  @include mq(sp) {
+      display: block;
+    }
+}
 
 
 .FreeConsultationSurvey{
@@ -104,6 +110,11 @@ padding: 27px 0;
   font-size: 10px;
   margin-top: 20px;
   margin-bottom: 40px;
+  @include mq(sp) {
+      padding-right: 20px;
+      padding-left: 20px;
+      line-height: normal;
+    }
 }
 
 .CommentAreaTitle{
@@ -112,6 +123,12 @@ padding: 27px 0;
   text-align: center;
   font-weight: bold;
   margin-bottom: 20px;
+  @include mq(sp) {
+      font-size: 20px;
+      padding-right: 20px;
+      padding-left: 20px;
+      line-height: normal;
+    }
 }
 
 .CommentImgList{
@@ -119,6 +136,12 @@ padding: 27px 0;
   gap: 20px;
   width: 800px;
   margin: 0 auto;
+
+  @include mq(sp) {
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+    }
 }
 
 .CommentImg{
