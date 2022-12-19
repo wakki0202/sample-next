@@ -6,9 +6,22 @@
  margin-bottom: 80px;
 }
 
-.IntroImg{
+.PCIntroImg{
   width: 760px;
   margin: auto;
+  @include mq(sp) {
+      display: none;
+    }
+}
+
+.SPIntroImg {
+  display: none;
+
+  @include mq(sp) {
+    width: 335px;
+    margin: auto;
+    display: block;
+  }
 }
 
 .Achivement{
@@ -16,4 +29,14 @@
   font-size: 11px;
   color: #6D6D6D;
   margin-top: 25px;
+  @include mq(sp) {
+      font-size: 9px;
+    }
+}
+
+.SPbr{
+  display: none;
+  @include mq(sp) {
+      display: block;
+    }
 }

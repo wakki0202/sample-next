@@ -10,9 +10,10 @@ export default function Home() {
       <section className="IntroSection">
         <div className={IntroSection.IntroBox}>
         <picture>
-          <img src="IntroGroup.png" alt="" className={IntroSection.IntroImg} />
+            <img src="IntroGroup.png" alt="" className={IntroSection.PCIntroImg} />
+            <img src="IntroGroup.png" alt="" className={IntroSection.SPIntroImg} />
         </picture>
-          <p className={IntroSection.Achivement}>※ DMM WEBCAMPで所定の学習および転職活動を履行された方の実績（2022年7月時点）</p>
+          <p className={IntroSection.Achivement}>※ DMM WEBCAMPで所定の学習および転職活動を<br className={ IntroSection.SPbr } />履行された方の実績（2022年7月時点）</p>
         </div>
       </section>
       
