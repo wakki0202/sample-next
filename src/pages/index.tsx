@@ -20,7 +20,7 @@ export default function Home() {
         <picture>
           <img src="/Frame 9748.png" alt="" className={ Curriculum.ContentImg1 } />
         </picture>
-        <p>※1 DMM WEBCAMPエンジニア転職受講者の中で契約時の職業がITエンジニア職以外と回答された方の割合（無職/離職中を除く・2022年2月時点）</p>
+        <p>※1 DMMWEBCAMPエンジニア転職受講者の中で契約時の職業がITエンジニア職以外と回答された方の割合（無職/離職中を除く・2022年2月時点）</p>
         <p>※2 本申し込み後に行われる定期メンタリング実施後アンケートによる満足率（N=780）（2022/01/24〜2022/04/19）</p> 
       </div>
       <div className={ Curriculum.Content2 }>
