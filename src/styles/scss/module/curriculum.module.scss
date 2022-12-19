@@ -1,0 +1,46 @@
+@use 'src/styles/scss/utils/index.scss' as *;
+
+
+.CurriculumSection{
+margin-top: 80px;
+margin-bottom: 80px;
+}
+
+.TitleImg{
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.TitleText{
+  font-size: 16px;
+  text-align: center;
+}
+
+.Content1{
+  width: 73%;
+  margin: auto;
+  margin-top: 40px;
+.ContentImg1{
+  margin-bottom: 16px;
+}
+
+p{
+  font-size: 10px;
+  text-align: right;
+}
+
+}
+
+
+.Content2{
+  width: 70%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.Content3 {
+  width: 60%;
+  margin: auto;
+}
