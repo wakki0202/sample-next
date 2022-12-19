@@ -1,0 +1,55 @@
+@use 'src/styles/scss/utils/index.scss' as *;
+
+
+.MVSection{
+position: relative;
+}
+
+ .cta_btn {
+   position: absolute;
+   bottom: 7vw;
+   right: 13vw;
+ }
+
+ .box{
+  position: relative;
+    border-radius: 94px;
+    font-weight: 700;
+    width: calcVw(430, 1440);
+    transition-duration: 0.2s;
+
+
+    .balloon {
+        z-index: 1;
+        width: 10.0555555556vw;
+        position: absolute;
+        top: -5%;
+        transform: translate(-50%, -50%);
+        left: 23%;
+
+        
+    }
+ 
+
+ .container {
+   display: flex;
+   gap: calcVw(13, 1440);
+   justify-content: center;
+   align-items: center;
+   color: white;
+   background-color: #6be241;
+   border: 2px solid #000;
+   border-radius: 94px;
+   max-width: 720px;
+   width: 100%;
+   padding: calcVw(25, 1440) 0;
+ }
+
+ .BalloonImg {
+   width: calcVw(27, 1440);
+ }
+ .TextImg{
+  width: calcVw(216, 1440);
+ }
+
+}
