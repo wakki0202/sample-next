@@ -6,6 +6,10 @@ import RecommendSection from 'src/styles/scss/module/RecommendSection.module.scs
 
 export default function Home() {
   return (
+    <LayoutNew
+      header={<></>}
+      footer={<></>}
+    >
     <div>
 
       <section className={RecommendSection.recommend_section}>
@@ -127,6 +131,7 @@ export default function Home() {
         </div>
       </section>
 
-    </div>
+      </div>
+      </LayoutNew>
   );
 }
