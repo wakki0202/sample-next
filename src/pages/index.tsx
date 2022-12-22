@@ -6,17 +6,22 @@ import IntroSection from '../styles/scss/module/IntroSection.module.scss'
 
 export default function Home() {
   return (
+    <LayoutNew
+      header={<></>}
+      footer={<></>}
+    >
     <div>
       <section className="IntroSection">
-        <div className={IntroSection.IntroBox}>
+        <div className={IntroSection.intro_box}>
         <picture>
-            <img src="IntroGroup.png" alt="" className={IntroSection.PCIntroImg} />
-            <img src="IntroGroup.png" alt="" className={IntroSection.SPIntroImg} />
+            <img src="/intro_img.png" alt="" className={IntroSection.pc_intro_img} />
+            <img src="/intro_img.png" alt="" className={IntroSection.sp_intro_img} />
         </picture>
-          <p className={IntroSection.Achivement}>※ DMM WEBCAMPで所定の学習および転職活動を<br className={ IntroSection.SPbr } />履行された方の実績（2022年7月時点）</p>
+          <p className={IntroSection.achivement}>※ DMM WEBCAMPで所定の学習および転職活動を<br className={ IntroSection.sp_br } />履行された方の実績（2022年7月時点）</p>
         </div>
       </section>
       
-    </div>
+      </div>
+      </LayoutNew>
   );
 }

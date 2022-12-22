@@ -1,12 +1,12 @@
 @use 'src/styles/scss/utils/index.scss' as *;
 
 
-.IntroBox{
+.intro_box{
  margin-top: 80px;
  margin-bottom: 80px;
 }
 
-.PCIntroImg{
+.pc_intro_img{
   width: 760px;
   margin: auto;
   @include mq(sp) {
@@ -14,7 +14,7 @@
     }
 }
 
-.SPIntroImg {
+.sp_intro_img {
   display: none;
 
   @include mq(sp) {
@@ -24,7 +24,7 @@
   }
 }
 
-.Achivement{
+.achivement{
   text-align: center;
   font-size: 11px;
   color: #6D6D6D;
@@ -34,7 +34,7 @@
     }
 }
 
-.SPbr{
+.sp_br{
   display: none;
   @include mq(sp) {
       display: block;
