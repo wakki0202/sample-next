@@ -1,24 +1,24 @@
 @use 'src/styles/scss/utils/index.scss' as *;
 
 
-.MVSection{
+.mv_section{
 position: relative;
 }
 
-.PCver{
+.pc_ver{
   @include mq(sp) {
       display: none;
     }
 }
 
-.SPver{
+.sp_ver{
   display: none;
   @include mq(sp) {
       display: block;
     }
 }
 
- .CtaBtn {
+ .cta_btn {
    position: absolute;
    bottom: 7vw;
    right: 13vw;
@@ -30,7 +30,7 @@ position: relative;
     }
  }
 
- .Box{
+ .box{
   position: relative;
     border-radius: 94px;
     font-weight: 700;
@@ -42,7 +42,7 @@ position: relative;
         width: calcVw(300, 375);
       }
 
-    .Balloon {
+    .balloon {
         z-index: 1;
         width: 10.0555555556vw;
         position: absolute;
@@ -57,7 +57,7 @@ position: relative;
     }
  
 
- .Container {
+ .container {
    display: flex;
    gap: calcVw(13, 1440);
    justify-content: center;
@@ -77,14 +77,14 @@ position: relative;
     }
  }
 
- .BalloonImg {
+ .arrow {
    width: calcVw(27, 1440);
 
   @include mq(sp) {
       width: calcVw(20, 375);
     }
  }
- .TextImg{
+ .text_img{
   width: calcVw(216, 1440);
 
   @include mq(sp) {

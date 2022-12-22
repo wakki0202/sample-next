@@ -6,32 +6,36 @@ import MV from "../styles/scss/module/mv.module.scss"
 
 export default function Home() {
   return (
+    <LayoutNew
+      header={<></>}
+      footer={<></>}
+    >
     <div>
-      <section className={MV.MVSection}>
-        <div className={MV.PCver}>
+      <section className={MV.mv_section}>
+        <div className={MV.pc_ver}>
           <picture>
-            <img src="/Frame 9742.png" alt="" />
+            <img src="/mv_pcver.png" alt="" />
           </picture>
           
-          <div className={MV.CtaBtn}>
-              <a href="/free-trial/" className={MV.Box} >
+          <div className={MV.cta_btn}>
+              <a href="/free-trial/" className={MV.box} >
               <div>
                 <picture>
-                  <img src="/Group 8261.png" alt="" className={MV.Balloon} />
+                  <img src="/balloon.png" alt="" className={MV.balloon} />
                 </picture>
               </div>
 
 
-                <div className={MV.Container}>
+                <div className={MV.container}>
                   
                   <div>
                     <picture>
-                      <img src="/Frame 9788.png" alt="" className={MV.BalloonImg} />
+                      <img src="/arrow.png" alt="" className={MV.arrow} />
                     </picture>
                     </div>
                   <div>
                     <picture>
-                      <img src="/無料相談に申し込む.png" alt="" className={MV.TextImg} />
+                      <img src="/btn_text.png" alt="" className={MV.text_img} />
                     </picture>
                   </div>
                 
@@ -41,29 +45,29 @@ export default function Home() {
               </a>
             </div>
         </div>
-        <div className={MV.SPver}>
+        <div className={MV.sp_ver}>
           <picture>
-            <img src="/Section_MV (1).png" alt="" />
+            <img src="/mv_spver.png" alt="" />
           </picture>
-          <div className={MV.CtaBtn}>
-              <a href="/free-trial/" className={MV.Box} >
+          <div className={MV.cta_btn}>
+              <a href="/free-trial/" className={MV.box} >
               <div>
                 <picture>
-                  <img src="/Group 8261.png" alt="" className={MV.Balloon} />
+                  <img src="/balloon.png" alt="" className={MV.balloon} />
                 </picture>
               </div>
 
 
-                <div className={MV.Container}>
+                <div className={MV.container}>
                   
                   <div>
                     <picture>
-                      <img src="/Frame 9788.png" alt="" className={MV.BalloonImg} />
+                      <img src="/arrow.png" alt="" className={MV.arrow} />
                     </picture>
                     </div>
                   <div>
                     <picture>
-                      <img src="/無料相談に申し込む.png" alt="" className={MV.TextImg} />
+                      <img src="/btn_text.png" alt="" className={MV.text_img} />
                     </picture>
                   </div>
                 
@@ -74,6 +78,7 @@ export default function Home() {
             </div>
         </div>
       </section>
-    </div>
+      </div>
+      </LayoutNew>
   );
 }
