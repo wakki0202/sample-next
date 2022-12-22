@@ -1,11 +1,11 @@
 @use 'src/styles/scss/utils/index.scss' as *;
 
-.OverviewSection{
+.overview_section{
   background-image: url('/dot.png');
   background-size: 6px 6px;
 }
 
-.Container{
+.container{
   padding-top: 40px;
   padding-bottom: 40px;
   width: 960px;
@@ -18,7 +18,7 @@
 
 
 
-.OverviewTitleImg{
+.overview_title_img{
   width: 537px;
   margin: 0 auto;
   @include mq(sp) {
@@ -26,7 +26,7 @@
     }
 }
 
-.SPOverviewTitleImg {
+.sp_overview_title_img {
   display: none;
   @include mq(sp) {
       display: block;
@@ -35,7 +35,7 @@
     }
 }
 
-.ExclusiveImgList{
+.overview_img_list{
   display: flex;
   margin-top: 40px;
   gap: 20px;
@@ -61,7 +61,7 @@
     line-height: 1.5;
   }
 
-  .ExclusiveText1{
+  .overview_text1{
     margin-top: 15px;
   }
 }

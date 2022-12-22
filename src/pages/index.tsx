@@ -6,39 +6,44 @@ import OverviewSection from '../styles/scss/module/OverviewSection.module.scss'
 
 export default function Home() {
   return (
+    <LayoutNew
+      header={<></>}
+      footer={<></>}
+    >
     <div>
-      <section className={OverviewSection.OverviewSection}>
-        <div className={OverviewSection.Container}>
+      <section className={OverviewSection.overview_section}>
+        <div className={OverviewSection.container}>
 
           <picture className="">
-            <img src="exclusive_text_title_1440px.png" alt="" className={OverviewSection.OverviewTitleImg} />
-            <img src="exclusive_text_title_375px.png" alt="" className={OverviewSection.SPOverviewTitleImg} />
+            <img src="overview_text_title_pcver.png" alt="" className={OverviewSection.overview_title_img} />
+            <img src="overview_text_title_spver.png" alt="" className={OverviewSection.sp_overview_title_img} />
           </picture>
 
-          <div className={OverviewSection.ExclusiveImgList} >
+          <div className={OverviewSection.overview_img_list} >
             <div>
               <picture>
-                <img src="exclusive_image_01.png" alt="" />
+                <img src="overview_image_01.png" alt="" />
                 </picture>
-                <p className={OverviewSection.ExclusiveText1}>※2022年1月～6月におけるDMM WEBCAMP受講中の大学生の内訳</p>
+                <p className={OverviewSection.overview_text1}>※2022年1月～6月におけるDMM WEBCAMP受講中の大学生の内訳</p>
             </div>
 
             <div>
               <picture>
-                <img src="exclusive_image_02.png" alt="" />
+                <img src="overview_image_02.png" alt="" />
                 </picture>
                 <p>※ご紹介には弊社指定の条件がございます。詳細は無料相談にてご相談ください。</p>
             </div>
               
             <div>
               <picture>
-                <img src="Frame 10113.png" alt="" />
+                <img src="overview_image_03.png" alt="" />
               </picture>
             </div>
 
           </div>
         </div>
       </section>
-    </div>
+      </div>
+      </LayoutNew>
   );
 }
