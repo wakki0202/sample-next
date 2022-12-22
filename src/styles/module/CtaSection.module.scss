@@ -4,13 +4,13 @@
   display: none;
 }
 
-.CtaSection{
+.cta_section{
 background-image: url('/img/grid_bg.png');
 background-color: #4a85f5;
 padding: 27px 0;
 }
 
-.FreeConsultationImg{
+.free_consultation_img{
   width: 387px;
   margin: auto;
   margin-bottom: 60px;
@@ -19,16 +19,16 @@ padding: 27px 0;
     }
 }
 
-.CtaBtn{
+.cta_btn{
   width: fit-content;
     margin: 0 auto;
     
 }
 
-.CtaBtnLink {
+.cta_btn_link {
   position: relative;
 
-  .BaloonImg {
+  .balloon_img {
       z-index: 1;
       width: 181px;
       position: absolute;
@@ -41,7 +41,7 @@ padding: 27px 0;
       }
     }
 
-        .MenImg {
+        .men_img {
           position: absolute;
           bottom: -10px;
           left: 40px;
@@ -54,7 +54,7 @@ padding: 27px 0;
           }
         }
 
-         .CtnBtnContent {
+         .ctn_btn_content {
            display: flex;
            gap: 13px;
            justify-content: flex-end;
@@ -77,7 +77,7 @@ padding: 27px 0;
            }
     
     
-           .TxtImg {
+           .text_img {
              width: 271px;
     
              @include mq(sp) {
@@ -85,7 +85,7 @@ padding: 27px 0;
              }
            }
     
-           .ArrowImg {
+           .arrow_img {
              width: 28px;
     
              @include mq(sp) {
@@ -104,7 +104,7 @@ padding: 27px 0;
 }
 
 
-.FreeConsultationSurvey{
+.free_consultation_survey{
   text-align: center;
   color: white;
   font-size: 10px;
@@ -117,7 +117,7 @@ padding: 27px 0;
     }
 }
 
-.CommentAreaTitle{
+.comment_area_title{
   color:white;
   font-size: 24px;
   text-align: center;
@@ -131,7 +131,7 @@ padding: 27px 0;
     }
 }
 
-.CommentImgList{
+.comment_img_list{
   display: flex;
   gap: 20px;
   width: 800px;
@@ -144,6 +144,6 @@ padding: 27px 0;
     }
 }
 
-.CommentImg{
+.comment_img{
   width: 240px;
 }
