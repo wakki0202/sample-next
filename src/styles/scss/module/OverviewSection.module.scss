@@ -1,67 +1,65 @@
-@use 'src/styles/scss/utils/index.scss' as *;
+@use "src/styles/scss/utils/index.scss" as *;
 
-.overview_section{
-  background-image: url('/dot.png');
+.overview_section {
+  background-image: url("/dot.png");
   background-size: 6px 6px;
 }
 
-.container{
+.container {
   padding-top: 40px;
   padding-bottom: 40px;
   width: 960px;
   margin: 0 auto;
 
   @include mq(sp) {
-      width: 100%;
-    }
+    width: 100%;
+  }
 }
 
-
-
-.overview_title_img{
+.overview_title_img {
   width: 537px;
   margin: 0 auto;
   @include mq(sp) {
-      display: none;
-    }
+    display: none;
+  }
 }
 
 .sp_overview_title_img {
   display: none;
   @include mq(sp) {
-      display: block;
-      width: 90%;
-      margin: auto;
-    }
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
 }
 
-.overview_img_list{
+.overview_img_list {
   display: flex;
   margin-top: 40px;
   gap: 20px;
 
   @include mq(sp) {
-      display: flex;
-      flex-direction: column;
-      margin-top: 10px;
-    }
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
 
-  div{
+  div {
     width: 335px;
 
     @include mq(sp) {
-        width: 90%;
-        margin: auto;
-      }
+      width: 90%;
+      margin: auto;
+    }
   }
 
-  p{
+  p {
     color: white;
     font-size: 12px;
     line-height: 1.5;
   }
 
-  .overview_text1{
+  .overview_text1 {
     margin-top: 15px;
   }
 }
