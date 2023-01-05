@@ -1,0 +1,91 @@
+@use "src/styles/scss/utils/index.scss" as *;
+
+.mv_section {
+  position: relative;
+}
+
+.pc_ver {
+  @include mq(sp) {
+    display: none;
+  }
+}
+
+.sp_ver {
+  display: none;
+  @include mq(sp) {
+    display: block;
+  }
+}
+
+.cta_btn {
+  position: absolute;
+  bottom: 7vw;
+  right: 13vw;
+
+  @include mq(sp) {
+    transform: translateX(50%);
+    bottom: 51vw;
+    right: 50%;
+  }
+}
+
+.box {
+  position: relative;
+  border-radius: 94px;
+  font-weight: 700;
+  width: calcVw(430, 1440);
+  transition-duration: 0.2s;
+
+  @include mq(sp) {
+    border-radius: calcVw(70, 375);
+    width: calcVw(300, 375);
+  }
+
+  .balloon {
+    z-index: 1;
+    width: 10.0555555556vw;
+    position: absolute;
+    top: -5%;
+    transform: translate(-50%, -50%);
+    left: 23%;
+
+    @include mq(sp) {
+      width: 25vw;
+    }
+  }
+
+  .container {
+    display: flex;
+    gap: calcVw(13, 1440);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #6be241;
+    border: 2px solid #000;
+    border-radius: 94px;
+    max-width: 720px;
+    width: 100%;
+    padding: calcVw(25, 1440) 0;
+
+    @include mq(sp) {
+      gap: calcVw(10, 375);
+      border-radius: calcVw(94, 375);
+      padding: calcVw(18, 375) 0;
+    }
+  }
+
+  .arrow {
+    width: calcVw(27, 1440);
+
+    @include mq(sp) {
+      width: calcVw(20, 375);
+    }
+  }
+  .text_img {
+    width: calcVw(216, 1440);
+
+    @include mq(sp) {
+      width: calcVw(152, 375);
+    }
+  }
+}
