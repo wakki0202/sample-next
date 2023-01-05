@@ -1,17 +1,16 @@
-@use 'src/styles/scss/utils/index.scss' as *;
+@use "src/styles/scss/utils/index.scss" as *;
 
-
-.intro_box{
- margin-top: 80px;
- margin-bottom: 80px;
+.intro_box {
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
-.pc_intro_img{
+.pc_intro_img {
   width: 760px;
   margin: auto;
   @include mq(sp) {
-      display: none;
-    }
+    display: none;
+  }
 }
 
 .sp_intro_img {
@@ -24,19 +23,19 @@
   }
 }
 
-.achivement{
+.achivement {
   text-align: center;
   font-size: 11px;
-  color: #6D6D6D;
+  color: #6d6d6d;
   margin-top: 25px;
   @include mq(sp) {
-      font-size: 9px;
-    }
+    font-size: 9px;
+  }
 }
 
-.sp_br{
+.sp_br {
   display: none;
   @include mq(sp) {
-      display: block;
-    }
+    display: block;
+  }
 }
