@@ -1,149 +1,145 @@
-@use 'src/styles/scss/utils/index.scss' as *;
+@use "src/styles/scss/utils/index.scss" as *;
 
-.pc_none{
+.pc_none {
   display: none;
 }
 
-.cta_section{
-background-image: url('/img/grid_bg.png');
-background-color: #4a85f5;
-padding: 27px 0;
+.cta_section {
+  background-image: url("/img/grid_bg.png");
+  background-color: #4a85f5;
+  padding: 27px 0;
 }
 
-.free_consultation_img{
+.free_consultation_img {
   width: 387px;
   margin: auto;
   margin-bottom: 60px;
   @include mq(sp) {
-      width: 80%;
-    }
+    width: 80%;
+  }
 }
 
-.cta_btn{
+.cta_btn {
   width: fit-content;
-    margin: 0 auto;
-    
+  margin: 0 auto;
 }
 
 .cta_btn_link {
   position: relative;
 
   .balloon_img {
-      z-index: 1;
-      width: 181px;
-      position: absolute;
-      top: -7%;
-      transform: translate(-50%, -50%);
-      left: 45%;
-  
+    z-index: 1;
+    width: 181px;
+    position: absolute;
+    top: -7%;
+    transform: translate(-50%, -50%);
+    left: 45%;
+
+    @include mq(sp) {
+      width: 30%;
+    }
+  }
+
+  .men_img {
+    position: absolute;
+    bottom: -10px;
+    left: 40px;
+    width: 200px;
+
+    @include mq(sp) {
+      width: calcVw(90, 375);
+      bottom: 0;
+      left: calcVw(5, 375);
+    }
+  }
+
+  .ctn_btn_content {
+    display: flex;
+    gap: 13px;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    background-color: #6be241;
+    border-radius: 94px;
+    width: 720px;
+    padding: 32px 86px 32px 200px;
+    box-shadow: 5px 5px #4a972f;
+
+    @include mq(sp) {
+      border-radius: calcVw(94, 375);
+      width: 100%;
+      padding: 6vw 20vw 6vw 26.6666666667vw;
+    }
+
+    &:hover {
+      box-shadow: 0;
+    }
+
+    .text_img {
+      width: 271px;
+
       @include mq(sp) {
-        width: 30%;
+        width: calcVw(126, 375);
       }
     }
 
-        .men_img {
-          position: absolute;
-          bottom: -10px;
-          left: 40px;
-          width: 200px;
-    
-          @include mq(sp) {
-            width: calcVw(90, 375);
-            bottom: 0;
-            left: calcVw(5, 375);
-          }
-        }
+    .arrow_img {
+      width: 28px;
 
-         .ctn_btn_content {
-           display: flex;
-           gap: 13px;
-           justify-content: flex-end;
-           align-items: center;
-           color: white;
-           background-color: #6be241;
-           border-radius: 94px;
-           width: 720px;
-           padding: 32px 86px 32px 200px;
-          box-shadow:  5px 5px #4A972F;
-    
-           @include mq(sp) {
-             border-radius: calcVw(94, 375);
-             width: 100%;
-             padding: 6vw 20vw 6vw 26.6666666667vw;
-           }
-    
-           &:hover {
-             box-shadow: 0;
-           }
-    
-    
-           .text_img {
-             width: 271px;
-    
-             @include mq(sp) {
-               width: calcVw(126, 375);
-             }
-           }
-    
-           .arrow_img {
-             width: 28px;
-    
-             @include mq(sp) {
-               width: calcVw(18, 375);
-             }
-           }
-         }
+      @include mq(sp) {
+        width: calcVw(18, 375);
+      }
+    }
+  }
 }
 
-
-.pc_none{
+.pc_none {
   display: none;
   @include mq(sp) {
-      display: block;
-    }
+    display: block;
+  }
 }
 
-
-.free_consultation_survey{
+.free_consultation_survey {
   text-align: center;
   color: white;
   font-size: 10px;
   margin-top: 20px;
   margin-bottom: 40px;
   @include mq(sp) {
-      padding-right: 20px;
-      padding-left: 20px;
-      line-height: normal;
-    }
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: normal;
+  }
 }
 
-.comment_area_title{
-  color:white;
+.comment_area_title {
+  color: white;
   font-size: 24px;
   text-align: center;
   font-weight: bold;
   margin-bottom: 20px;
   @include mq(sp) {
-      font-size: 20px;
-      padding-right: 20px;
-      padding-left: 20px;
-      line-height: normal;
-    }
+    font-size: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: normal;
+  }
 }
 
-.comment_img_list{
+.comment_img_list {
   display: flex;
   gap: 20px;
   width: 800px;
   margin: 0 auto;
 
   @include mq(sp) {
-      display: flex;
-      flex-direction: column;
-      width: fit-content;
-    }
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }
 }
 
-.comment_img{
+.comment_img {
   width: 240px;
 }
