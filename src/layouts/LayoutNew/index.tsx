@@ -1,4 +1,4 @@
-import Style from "./index.module.scss";
+import Style from './index.module.scss';
 
 interface Props {
   children: React.ReactNode;
