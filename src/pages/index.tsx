@@ -31,23 +31,43 @@ export default function Home() {
                 </div>
               </div>
               <div className={JobSupport.content_img}>
-                <img src="/job_support1.png" alt="" />
+                <img
+                  src="/job_support1.png"
+                  alt=""
+                  className={JobSupport.pc_ver}
+                />
+                <img
+                  src="/job_support1_sp.png"
+                  alt=""
+                  className={JobSupport.sp_ver}
+                />
               </div>
             </div>
 
             <div id="flex" className={JobSupport.content2}>
               <div className={JobSupport.content_img}>
-                <img src="/job_support2.png" alt="" />
+                <img
+                  src="/job_support2.png"
+                  alt=""
+                  className={JobSupport.pc_ver}
+                />
+                <img
+                  src="/job_support2_sp.png"
+                  alt=""
+                  className={JobSupport.sp_ver}
+                />
               </div>
               <div className={JobSupport.content2_detail}>
                 <h3>
-                  45,000件以上の書類提出実績<span>※1</span>
+                  45,000件以上の書類提出実績
+                  <span className={JobSupport.mini_note}>※1</span>
                   ！あなたの魅力を引き出します！
                 </h3>
                 <div className={JobSupport.content2_detail_text}>
                   <p>
                     1人1人のエントリーシートに対し、就活に精通したアドバイザーが添削を行います。個別フィードバックをもらえるため、質の高いエントリーシートを作成することができます（OpenES
-                    <span>※2</span>の添削を実施いたします）。
+                    <span className={JobSupport.mini_note}>※2</span>
+                    の添削を実施いたします）。
                   </p>
                   <p className={JobSupport.content_detail_note}>
                     ※1 DMM WEBCAMP
@@ -73,7 +93,16 @@ export default function Home() {
               </div>
 
               <div className={JobSupport.content_img}>
-                <img src="/job_support3.png" alt="" />
+                <img
+                  src="/job_support3.png"
+                  alt=""
+                  className={JobSupport.pc_ver}
+                />
+                <img
+                  src="/job_support3_sp.png"
+                  alt=""
+                  className={JobSupport.sp_ver}
+                />
               </div>
             </div>
           </div>
@@ -86,7 +115,11 @@ export default function Home() {
               <img src="/job_support_balloon.png" alt="" />
             </div>
             <div>
-              <h3>エンジニア職種のインターン先紹介もあります！</h3>
+              <h3>
+                エンジニア職種の
+                <br className={JobSupport.sp_ver} />
+                インターン先紹介もあります！
+              </h3>
             </div>
           </div>
 
