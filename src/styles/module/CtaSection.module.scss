@@ -8,6 +8,7 @@
   background-image: url("/img/grid_bg.png");
   background-color: #4a85f5;
   padding: 27px 0;
+  width: 100%;
 }
 
 .free_consultation_img {
@@ -107,6 +108,7 @@
   margin-top: 20px;
   margin-bottom: 40px;
   @include mq(sp) {
+    font-size: 2.1333333333vw;
     padding-right: 20px;
     padding-left: 20px;
     line-height: normal;
@@ -120,7 +122,7 @@
   font-weight: bold;
   margin-bottom: 20px;
   @include mq(sp) {
-    font-size: 20px;
+    font-size: 5.3333vw;
     padding-right: 20px;
     padding-left: 20px;
     line-height: normal;
@@ -129,8 +131,8 @@
 
 .comment_img_list {
   display: flex;
+  justify-content: center;
   gap: 20px;
-  width: 800px;
   margin: 0 auto;
 
   @include mq(sp) {
@@ -142,4 +144,8 @@
 
 .comment_img {
   width: 240px;
+
+  @include mq(sp) {
+    width: 64vw;
+  }
 }
