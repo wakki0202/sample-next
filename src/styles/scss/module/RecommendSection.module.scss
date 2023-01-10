@@ -92,6 +92,7 @@
       letter-spacing: -1;
 
       @include mq(sp) {
+        padding: 2.6666666667vw 8vw;
         font-size: 6.4vw;
       }
     }
@@ -100,8 +101,16 @@
   .recommend_text {
     padding: 20px;
 
+    @include mq(sp) {
+      padding: 5.3333333333vw 6.6666666667vw;
+    }
+
     p {
       font-size: 1.6rem;
+
+      @include mq(sp) {
+        font-size: 4.26vw;
+      }
     }
   }
 
