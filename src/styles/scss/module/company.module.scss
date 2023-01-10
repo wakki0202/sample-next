@@ -1,0 +1,141 @@
+@use "src/styles/scss/utils/index.scss" as *;
+
+.pc_ver {
+  @include mq(sp) {
+    display: none;
+  }
+}
+
+.sp_ver {
+  display: none;
+
+  @include mq(sp) {
+    display: block;
+  }
+}
+
+.company_section {
+  padding: 80px 0;
+}
+
+.title_img {
+  height: 72px;
+  margin-bottom: 60px;
+
+  img {
+    object-fit: contain;
+    height: 100%;
+    margin: auto;
+  }
+}
+
+.company_section_content {
+  padding: 40px 30px 30px;
+}
+
+.recruiter_introduction {
+  min-width: 414px;
+  position: relative;
+  border: 3px solid #000;
+  box-shadow: 5px 8px 0 #f1574d;
+  border-radius: 4px;
+  padding: 40px 30px 30px;
+}
+
+.recruiter_introduction_badge {
+  position: absolute;
+  left: 14px;
+  top: -80px;
+  width: 430px;
+}
+
+.comment_wrap {
+  display: flex;
+  gap: 25px;
+}
+
+.recruiter_introduction_detail {
+  display: flex;
+  gap: 11px;
+}
+
+.recruiter_introduction_detail_img {
+  flex-shrink: 2;
+  max-width: 190px;
+}
+
+.recruiter_introduction_detail_text {
+  p {
+    font-weight: 500;
+    line-height: 1.78;
+    font-size: 1.4rem;
+  }
+  .recruiter_name {
+    font-weight: 700;
+    font-size: 2.6rem;
+    span {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.recruiter_comment_highlight {
+  max-width: 390px;
+}
+
+.recruiter_comment_overview::before {
+  position: absolute;
+  translate: -100% 0;
+  left: 0;
+  top: 80px;
+  content: "";
+  display: block;
+  width: 48px;
+  height: 54px;
+  background-color: #000;
+  -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+.recruiter_comment_overview {
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  border: 3px solid #000;
+  box-shadow: 8px 8px 0 #3072f2;
+  border-radius: 4px;
+  padding: 40px;
+  width: 676px;
+  margin-left: auto;
+  margin-top: -30px;
+  line-height: 2;
+  p {
+    font-size: 1.8rem;
+  }
+}
+
+.company_survey_result {
+  position: relative;
+  width: fit-content;
+  margin: 90px auto 0;
+  padding: 10px 20px;
+
+  .balloon_img {
+    position: absolute;
+    width: 253px;
+    top: -20px;
+    left: -1vw;
+  }
+
+  h3 {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 2.7rem;
+    border: 3px solid #000;
+    border-radius: 8px;
+    background-color: #3073f3;
+    padding: 10px 20px;
+  }
+}
