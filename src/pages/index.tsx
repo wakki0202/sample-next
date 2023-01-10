@@ -185,15 +185,15 @@ export default function Home() {
 
         <div className={Curriculum.three_step}>
           <div className={Curriculum.pc_ver}>
-            <img src="/curriculum_step1.png" alt="" />
+            <img src="/curriculum_step1.png" alt="" className={Curriculum.badge} />
 
-            <img src="/arrow_right.png" alt="" />
+            <img src="/arrow_right.png" alt="" className={Curriculum.arrow} />
 
-            <img src="/curriculum_step2.png" alt="" />
+            <img src="/curriculum_step2.png" alt="" className={Curriculum.badge} />
 
-            <img src="/arrow_right.png" alt="" />
+            <img src="/arrow_right.png" alt="" className={Curriculum.arrow} />
 
-            <img src="/curriculum_step3.png" alt="" />
+            <img src="/curriculum_step3.png" alt="" className={Curriculum.badge} />
           </div>
           <div className={Curriculum.sp_ver}>
             <img src="/curriculum_sp_three_step.png" alt="" />
