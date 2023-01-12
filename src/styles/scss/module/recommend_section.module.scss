@@ -6,7 +6,7 @@
   .recommend_wrap {
     background-color: white;
     background-image: url("/grid_bg.png");
-    width: 1360px;
+    width: 95%;
     margin: 0 auto;
 
     @include mq(sp) {
@@ -35,7 +35,7 @@
   .recommend_title_img {
     width: 735px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: calcVw(40);
   }
 
   .recommend_img_list {
@@ -55,7 +55,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 813px;
+    max-width: 768px;
     width: 100%;
     margin: 0 auto;
   }
@@ -64,7 +64,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 813px;
+    max-width: 768px;
     width: 100%;
     margin: 0 auto;
   }
@@ -89,7 +89,7 @@
       font-weight: 700;
       text-align: center;
       line-height: 1.4;
-      letter-spacing: -1;
+      letter-spacing: -0.04em;
 
       @include mq(sp) {
         padding: 2.6666666667vw 8vw;
