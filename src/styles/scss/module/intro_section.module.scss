@@ -9,14 +9,6 @@
   width: 760px;
   margin: auto;
   @include mq(sp) {
-    display: none;
-  }
-}
-
-.sp_intro_img {
-  display: none;
-
-  @include mq(sp) {
     width: 335px;
     margin: auto;
     display: block;
@@ -29,7 +21,7 @@
   color: #6d6d6d;
   margin-top: 25px;
   @include mq(sp) {
-    font-size: 9px;
+    font-size: 10px;
   }
 }
 
