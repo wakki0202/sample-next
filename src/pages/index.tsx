@@ -24,21 +24,28 @@ export default function Home() {
             </div>
 
             <div className={OverviewSection.overview_img_list}>
-              <div>
+              <div className={OverviewSection.list}>
                 <img src="overview_image_01.png" alt="" />
-                <p className={OverviewSection.overview_text1}>
-                  ※2022年1月～6月におけるDMM WEBCAMP受講中の大学生の内訳
-                </p>
+
+                <div className={OverviewSection.text1}>
+                  <p>※</p>
+                  <p className={OverviewSection.overview_text1}>
+                    2022年1月～6月におけるDMM WEBCAMP受講中の大学生の内訳
+                  </p>
+                </div>
               </div>
 
-              <div>
+              <div className={OverviewSection.list}>
                 <img src="overview_image_02.png" alt="" />
-                <p>
-                  ※ご紹介には弊社指定の条件がございます。詳細は無料相談にてご相談ください。
-                </p>
+                <div className={OverviewSection.text2}>
+                  <p>※</p>
+                  <p>
+                    ご紹介には弊社指定の条件がございます。詳細は無料相談にてご相談ください。
+                  </p>
+                </div>
               </div>
 
-              <div>
+              <div className={OverviewSection.list}>
                 <img src="overview_image_03.png" alt="" />
               </div>
             </div>
