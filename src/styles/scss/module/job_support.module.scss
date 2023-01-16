@@ -20,7 +20,8 @@
 .grid_bg {
   background-image: url("/grid_bg.png");
   background-color: white;
-  width: 1380px;
+  width: 97%;
+  max-width: 1400px;
   margin: 0 auto;
   padding-bottom: 80px;
   @include mq(sp) {
@@ -46,9 +47,13 @@
   display: flex;
   flex-direction: column;
   gap: 100px;
-  width: 70%;
+  width: 980px;
   margin: auto;
   margin-top: 60px;
+
+  @include mq(tablet) {
+    width: 93.75%;
+  }
 
   @include mq(sp) {
     width: 100%;
@@ -65,7 +70,7 @@
   gap: 20px;
 
   .content_img {
-    width: 35%;
+    width: 380px;
 
     @include mq(sp) {
       width: 100%;
@@ -93,7 +98,7 @@
 .content1_detail,
 .content2_detail,
 .content3_detail {
-  width: 65%;
+  width: 70%;
   border: 3px solid black;
   border-radius: 8px;
 
