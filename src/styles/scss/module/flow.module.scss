@@ -11,9 +11,19 @@
     margin: 0 auto;
     background-color: #fff;
 
+    @include mq(sp) {
+      width: 100%;
+      padding-bottom: 10.6vw;
+    }
+
     .title {
       height: 72px;
       margin: 0 auto 60px;
+
+      @include mq(sp) {
+        margin-bottom: 5.4vw;
+        height: 12.8vw;
+      }
 
       img {
         object-fit: contain;
@@ -28,6 +38,13 @@
         display: flex;
         gap: 26px;
 
+        @include mq(tablet) {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 5.3vw;
+        }
+
         .step {
           border: 4px solid #000;
           border-radius: 8px;
@@ -35,6 +52,13 @@
           width: 17.3vw;
           max-width: 250px;
           overflow: hidden;
+          @include mq(tablet) {
+            width: 100%;
+            max-width: none;
+          }
+          @include mq(sp) {
+            width: 64vw;
+          }
 
           .step_title {
             background: #3073f3;
@@ -74,6 +98,17 @@
               font-weight: 900;
               font-size: min(1.6rem, 1.1111111111vw);
               color: #fff;
+
+              @include mq(tablet) {
+                width: 19vw;
+              }
+
+              @include mq(sp) {
+                width: 53.3vw;
+                max-width: none;
+                font-size: 4.2vw;
+                height: 13.3vw;
+              }
             }
 
             .step_content_btn::after {
@@ -88,6 +123,10 @@
               aspect-ratio: 1/1;
               background-image: url(/flow_step3_arrow.png);
               background-size: contain;
+
+              @include mq(sp) {
+                width: 6.4vw;
+              }
             }
           }
         }
@@ -96,6 +135,14 @@
           width: 16px;
           display: grid;
           place-items: center;
+
+          @include mq(tablet) {
+            rotate: 90deg;
+          }
+
+          @include mq(sp) {
+            width: 4.2vw;
+          }
         }
       }
 
@@ -109,6 +156,11 @@
           font-weight: 700;
           width: 430px;
           filter: drop-shadow(0 7px 0 #4a972f);
+
+          @include mq(sp) {
+            width: 80vw;
+            border-radius: 18.6vw;
+          }
 
           .btn_balloon {
             z-index: 1;
@@ -131,6 +183,20 @@
             max-width: 720px;
             width: 100%;
             padding: 25px 0;
+
+            .btn_arrow {
+              width: 24px;
+              @include mq(sp) {
+                width: 4.2vw;
+              }
+            }
+
+            .btn_text {
+              width: 216px;
+              @include mq(sp) {
+                width: 40.5vw;
+              }
+            }
           }
         }
       }
