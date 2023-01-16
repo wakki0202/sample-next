@@ -1,0 +1,139 @@
+@use "src/styles/scss/utils/index.scss" as *;
+
+.wrapper {
+  background-color: #2f72f2;
+  border-top: 2px solid #000;
+
+  .inner {
+    padding-bottom: 50px;
+    width: 97%;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #fff;
+
+    .title {
+      height: 72px;
+      margin: 0 auto 60px;
+
+      img {
+        object-fit: contain;
+        height: 100%;
+      }
+    }
+
+    .container {
+      width: fit-content;
+      margin: 0 auto;
+      .steps {
+        display: flex;
+        gap: 26px;
+
+        .step {
+          border: 4px solid #000;
+          border-radius: 8px;
+          box-shadow: 3px 3px 0 #000;
+          width: 17.3vw;
+          max-width: 250px;
+          overflow: hidden;
+
+          .step_title {
+            background: #3073f3;
+            border-bottom: 3px solid #000;
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+            padding: 10px 0;
+          }
+
+          .step_content {
+            padding: 17px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            grid-gap: 20px;
+            gap: 20px;
+
+            .step_content_text {
+              font-weight: 700;
+              font-size: 1.7rem;
+            }
+
+            .step_content_btn {
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              width: 12.5vw;
+              max-width: 180px;
+              height: 35px;
+              background: #f1574d;
+              border-radius: 53px;
+              font-weight: 900;
+              font-size: min(1.6rem, 1.1111111111vw);
+              color: #fff;
+            }
+
+            .step_content_btn::after {
+              content: "";
+              display: block;
+              position: absolute;
+              translate: 0 -50%;
+              top: 50%;
+              right: 12px;
+              width: 1.6666666667vw;
+              max-width: 24px;
+              aspect-ratio: 1/1;
+              background-image: url(/flow_step3_arrow.png);
+              background-size: contain;
+            }
+          }
+        }
+
+        .arrow {
+          width: 16px;
+          display: grid;
+          place-items: center;
+        }
+      }
+
+      .btn_wrap {
+        width: fit-content;
+        margin: 70px auto 0;
+
+        .btn_box {
+          position: relative;
+          border-radius: 94px;
+          font-weight: 700;
+          width: 430px;
+          filter: drop-shadow(0 7px 0 #4a972f);
+
+          .btn_balloon {
+            z-index: 1;
+            width: 134px;
+            position: absolute;
+            top: -5%;
+            transform: translateY(-50%);
+            left: 33px;
+          }
+
+          .btn_content {
+            display: flex;
+            grid-gap: 13px;
+            gap: 13px;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            background-color: #6be241;
+            border-radius: 94px;
+            max-width: 720px;
+            width: 100%;
+            padding: 25px 0;
+          }
+        }
+      }
+    }
+  }
+}
