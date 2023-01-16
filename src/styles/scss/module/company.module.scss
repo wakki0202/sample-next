@@ -197,7 +197,7 @@
   @include mq(sp) {
     width: 100%;
     margin-top: 21.3333333333vw;
-    padding: 0;
+    padding: 0 5.3333333333vw;
   }
 
   .balloon_img {
@@ -227,6 +227,14 @@
     @include mq(sp) {
       font-size: 4.8vw;
       padding: 2.6666666667vw 5.3333333333vw;
+    }
+
+    .sp_ver {
+      display: none;
+
+      @include mq(tablet) {
+        display: block;
+      }
     }
   }
 }
