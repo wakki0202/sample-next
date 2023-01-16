@@ -34,8 +34,11 @@
 
   .recommend_title_img {
     width: 735px;
-    margin: 0 auto;
-    margin-bottom: calcVw(40);
+    margin: 0 auto 50px;
+
+    @include mq(sp) {
+      margin-bottom: calcVw(50);
+    }
   }
 
   .recommend_img_list {
@@ -43,6 +46,7 @@
     flex-direction: column;
     grid-gap: 60px;
     gap: 60px;
+    padding: 20px;
 
     .recommend_container {
       width: 58%;
