@@ -34,7 +34,7 @@
     position: absolute;
     top: -7%;
     transform: translate(-50%, -50%);
-    left: 45%;
+    left: 40%;
 
     @include mq(sp) {
       width: 30%;
@@ -44,32 +44,34 @@
   .men_img {
     position: absolute;
     bottom: -10px;
-    left: 40px;
-    width: 200px;
+    left: 25px;
+    width: 232px;
 
     @include mq(sp) {
-      width: calcVw(90, 375);
+      width: 24vw;
       bottom: 0;
-      left: calcVw(5, 375);
+      left: 1.3vw;
     }
   }
 
   .ctn_btn_content {
     display: flex;
     gap: 13px;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     color: white;
     background-color: #6be241;
     border-radius: 94px;
     width: 720px;
-    padding: 32px 86px 32px 200px;
-    box-shadow: 5px 5px #4a972f;
+    padding: 32px 86px 32px 250px;
+    box-shadow: 1px 6px #4a972f;
 
     @include mq(sp) {
-      border-radius: calcVw(94, 375);
+      grid-gap: 2.6666666667vw;
+      gap: 2.6666666667vw;
+      border-radius: 25.0666666667vw;
       width: 100%;
-      padding: 6vw 20vw 6vw 26.6666666667vw;
+      padding: 5.3vw 7.4vw 5.3vw 26.6vw;
     }
 
     &:hover {
