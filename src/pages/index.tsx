@@ -28,7 +28,7 @@ export default function Home() {
                 <img src="overview_image_01.png" alt="" />
 
                 <div className={OverviewSection.text1}>
-                  <p>※</p>
+                  <span>※</span>
                   <p className={OverviewSection.overview_text1}>
                     2022年1月～6月におけるDMM WEBCAMP受講中の大学生の内訳
                   </p>
@@ -38,7 +38,7 @@ export default function Home() {
               <div className={OverviewSection.list}>
                 <img src="overview_image_02.png" alt="" />
                 <div className={OverviewSection.text2}>
-                  <p>※</p>
+                  <span>※</span>
                   <p>
                     ご紹介には弊社指定の条件がございます。詳細は無料相談にてご相談ください。
                   </p>
