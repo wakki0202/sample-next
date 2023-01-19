@@ -11,22 +11,19 @@ export default function Home() {
       footer={<footer className={styles.footer}></footer>}
     >
       <section className={Company.company_section}>
-        <div id="title" className={Company.title_img}>
-          <img src="/company_title_img.png" alt="" />
+        <div className={Company.title_img}>
+          <img src="/company_title_img.png" alt="企業様の声" />
         </div>
 
         <div className={Company.company_section_content}>
-          <div id="flex" className={Company.comment_wrap}>
-            <div id="relative" className={Company.recruiter_introduction}>
-              <div
-                id="absolute サイバーエージェント新卒採用メンバー"
-                className={Company.recruiter_introduction_badge}
-              >
+          <div className={Company.comment_wrap}>
+            <div className={Company.recruiter_introduction}>
+              <div className={Company.recruiter_introduction_badge}>
                 <img src="/company_name.png" alt="" />
               </div>
-              <div id="flex" className={Company.recruiter_introduction_detail}>
+              <div className={Company.recruiter_introduction_detail}>
                 <div className={Company.recruiter_introduction_detail_img}>
-                  <img src="/company_recruiter.png" alt="" />
+                  <img src="/company_recruiter.png" alt="平山拓己氏の顔写真" />
                 </div>
 
                 <div className={Company.recruiter_introduction_detail_text}>
@@ -49,21 +46,25 @@ export default function Home() {
             </div>
           </div>
 
-          <div id="コメント" className={Company.recruiter_comment_overview}>
+          <div className={Company.recruiter_comment_overview}>
             <div className={Company.recruiter_comment_highlight_sp}>
-              <img src="/company_comment.png" alt="" />
+              <img src="/company_comment.png" alt="平山さんのコメント" />
             </div>
             <p>
               エンジニア職種にとどまらず、全てのビジネスマンにWebの知識は必須になっています。就活生のエントリーシートに、プログラミングを用いた個人の成果物があった場合、必ず目を通しますね。どの職種でもアドバンテージになると思います。TOEICだと数字でしか判断ができないのですが、個人ごとのWebの成果物の場合「なぜそのアプリケーションを作成したのか？」まで見ることができるため、ビジネス観点まで考察することができます。また、Webの知識を得た上でビジネスマンになることは、ポジティブでしかないと思います。
             </p>
           </div>
         </div>
-        <div id="relative" className={Company.company_survey_result}>
-          <div id="absolute balloon" className={Company.balloon_img}>
-            <img src="/company_balloon.png" alt="" className={Company.pc_ver} />
+        <div className={Company.company_survey_result}>
+          <div className={Company.balloon_img}>
+            <img
+              src="/company_balloon.png"
+              alt="エンジニア職種もビジネス系職種も"
+              className={Company.pc_ver}
+            />
             <img
               src="/company_balloon_sp.png"
-              alt=""
+              alt="エンジニア職種もビジネス系職種も"
               className={Company.sp_ver}
             />
           </div>
