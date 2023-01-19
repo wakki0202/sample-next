@@ -8,13 +8,15 @@ export default function Home() {
   return (
     <LayoutNew header={<></>} footer={<></>}>
       <section className={JobSupport.job_support_section}>
-        <div id="チェック背景" className={JobSupport.grid_bg}>
-          <picture id="タイトル画像" className={JobSupport.title_img}>
-            <img src="/job_support_title.png" alt="" />
-          </picture>
+        <div className={JobSupport.grid_bg}>
+          <h2>
+            <picture className={JobSupport.title_img}>
+              <img src="/job_support_title.png" alt="就活サポート" />
+            </picture>
+          </h2>
 
-          <div id="3段" className={JobSupport.job_support_contents}>
-            <div id="flex" className={JobSupport.content1}>
+          <div className={JobSupport.job_support_contents}>
+            <div className={JobSupport.content1}>
               <div className={JobSupport.content1_detail}>
                 <h3>
                   1000名以上を未経験からエンジニアに転職成功させたノウハウを凝縮
@@ -33,27 +35,27 @@ export default function Home() {
               <div className={JobSupport.content_img}>
                 <img
                   src="/job_support1.png"
-                  alt=""
+                  alt="就活攻略のための豊富な研修"
                   className={JobSupport.pc_ver}
                 />
                 <img
                   src="/job_support1_sp.png"
-                  alt=""
+                  alt="就活攻略のための豊富な研修"
                   className={JobSupport.sp_ver}
                 />
               </div>
             </div>
 
-            <div id="flex" className={JobSupport.content2}>
+            <div className={JobSupport.content2}>
               <div className={JobSupport.content_img}>
                 <img
                   src="/job_support2.png"
-                  alt=""
+                  alt="人事担当者目線のエントリーシート個別添削"
                   className={JobSupport.pc_ver}
                 />
                 <img
                   src="/job_support2_sp.png"
-                  alt=""
+                  alt="人事担当者目線のエントリーシート個別添削"
                   className={JobSupport.sp_ver}
                 />
               </div>
@@ -81,7 +83,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div id="flex" className={JobSupport.content3}>
+            <div className={JobSupport.content3}>
               <div className={JobSupport.content3_detail}>
                 <h3>DMMだからこその豊富な求人をご紹介</h3>
                 <div className={JobSupport.content3_detail_text}>
@@ -95,24 +97,24 @@ export default function Home() {
               <div className={JobSupport.content_img}>
                 <img
                   src="/job_support3.png"
-                  alt=""
+                  alt="新卒の限定求人をご紹介"
                   className={JobSupport.pc_ver}
                 />
                 <img
                   src="/job_support3_sp.png"
-                  alt=""
+                  alt="新卒の限定求人をご紹介"
                   className={JobSupport.sp_ver}
                 />
               </div>
             </div>
           </div>
 
-          <div
-            id="エンジニア職種のインターン先紹介もあります！"
-            className={JobSupport.intern_for_engineer}
-          >
+          <div className={JobSupport.intern_for_engineer}>
             <div className={JobSupport.balloon_img}>
-              <img src="/job_support_balloon.png" alt="" />
+              <img
+                src="/job_support_balloon.png"
+                alt="大学1〜2年生におすすめ"
+              />
             </div>
             <div>
               <h3>
@@ -123,7 +125,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div id="注意" className={JobSupport.job_support_note}>
+          <div className={JobSupport.job_support_note}>
             <p className={JobSupport.job_support_note_title}>注意</p>
 
             <div className={JobSupport.job_support_note_detail}>
