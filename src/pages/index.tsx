@@ -13,7 +13,12 @@ export default function Home() {
             <img
               src="/intro_img.png"
               alt=""
-              className={intro_section.pc_intro_img}
+              className={intro_section.intro_img}
+            />
+            <img
+              src="/intro_img_sp.png"
+              alt=""
+              className={intro_section.intro_img_sp}
             />
             <p className={intro_section.achivement}>
               ※ DMM WEBCAMPで所定の学習および転職活動を

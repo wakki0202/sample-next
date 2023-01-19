@@ -1,16 +1,26 @@
 @use "src/styles/scss/utils/index.scss" as *;
 
 .intro_box {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  padding: 80px 0;
+  @include mq(sp) {
+    padding: calcVw(75) 0;
+  }
 }
 
-.pc_intro_img {
+.intro_img {
   width: 760px;
   margin: auto;
   @include mq(sp) {
-    width: 335px;
-    margin: auto;
+    display: none;
+  }
+}
+
+.intro_img_sp {
+  max-width: 760px;
+  margin: 0 auto;
+  display: none;
+
+  @include mq(sp) {
     display: block;
   }
 }
@@ -21,7 +31,7 @@
   color: #6d6d6d;
   margin-top: 25px;
   @include mq(sp) {
-    font-size: 10px;
+    font-size: calcVw(10);
   }
 }
 
