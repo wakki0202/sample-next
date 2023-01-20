@@ -9,7 +9,7 @@ export default function Home() {
     <div>
       <section className={Curriculum.curriculum_section}>
         <div>
-          <img src="/curriculum_title.png" alt="" className={Curriculum.title_img} />
+          <img src="/curriculum_title.png" alt="カリキュラム内容" className={Curriculum.title_img} />
 
           <p className={Curriculum.title_text}>
             プログラミングを基礎から学べるコースです。オリジナルWebサービスを作成します。
@@ -23,10 +23,10 @@ export default function Home() {
             <div className={Curriculum.content_first}>
               <div className={Curriculum.content_items}>
                 <div className={Curriculum.content_badge}>
-                  <img src="/curriculum_badge1.png" alt="" />
+                  <img src="/curriculum_badge1.png" alt="受講生の97%が未経験者" />
                 </div>
                 <div className={Curriculum.content_icon1}>
-                  <img src="/curriculum_content_icon1.png" alt="" />
+                  <img src="/curriculum_content_icon1.png" alt="初心者マーク" />
                 </div>
               </div>
               <h3>
@@ -49,10 +49,10 @@ export default function Home() {
             <div className={Curriculum.content_second}>
               <div className={Curriculum.content_items}>
                 <div className={Curriculum.content_badge}>
-                  <img src="/curriculum_badge2.png" alt="" />
+                  <img src="/curriculum_badge2.png" alt="メンタリング満足度93%以上" />
                 </div>
                 <div className={Curriculum.content_icon2}>
-                  <img src="/curriculum_content_icon2.png" alt="" />
+                  <img src="/curriculum_content_icon2.png" alt="メンタリングマーク" />
                 </div>
               </div>
               <h3>
@@ -69,10 +69,10 @@ export default function Home() {
             <div className={Curriculum.content_third}>
               <div className={Curriculum.content_items}>
                 <div className={Curriculum.content_badge}>
-                  <img src="/curriculum_badge3.png" alt="" />
+                  <img src="/curriculum_badge3.png" alt="メンター先行通過率10%" />
                 </div>
                 <div className={Curriculum.content_icon3}>
-                  <img src="/curriculum_content_icon3.png" alt="" />
+                  <img src="/curriculum_content_icon3.png" alt="Q&Aマーク" />
                 </div>
               </div>
               <h3>
@@ -99,7 +99,7 @@ export default function Home() {
         <div className={Curriculum.tool_wrap}>
           <div className={Curriculum.tool_wrap_title}>
             <div className={Curriculum.tool_wrap_title_balloon_img}>
-              <img src="/curriculum_tool_title_balloon.png" alt="" />
+              <img src="/curriculum_tool_title_balloon.png" alt="現場で使われている最新流行ツールを厳選" />
             </div>
             <h3>実務ですぐ活かせる各種ツールも一緒に学べる</h3>
           </div>
@@ -119,15 +119,15 @@ export default function Home() {
           </p>
           <div className={Curriculum.tool_items}>
             <div>
-              <img src="/curriculum_design_tools.png" alt="" />
+              <img src="/curriculum_design_tools.png" alt="デザインツール" />
               <p>デザインツール</p>
             </div>
             <div>
-              <img src="/curriculum_develop_tools.png" alt="" />
+              <img src="/curriculum_develop_tools.png" alt="開発ツール" />
               <p>開発ツール</p>
             </div>
             <div>
-              <img src="/curriculum_web_tools.png" alt="" />
+              <img src="/curriculum_web_tools.png" alt="Webアプリ" />
               <p>Webアプリ</p>
             </div>
           </div>
@@ -137,29 +137,29 @@ export default function Home() {
 
         <div className={Curriculum.curriculum_course}>
           <div className={Curriculum.pc_ver}>
-            <img src="/curriculum_course_pc_img.png" alt="" />
+            <img src="/curriculum_course_pc_img.png" alt="カリキュラムコース" />
           </div>
           <div className={Curriculum.sp_ver}>
-            <img src="/curriculum_sp_img.png" alt="" />
+            <img src="/curriculum_sp_img.png" alt="カリキュラムコース" />
           </div>
         </div>
 
         <div className={Curriculum.learn_detail_time}>
           <div className={Curriculum.learn_detail_time_title}>
-            <img src="/curriculum_clock_icon.png" />
+            <img src="/curriculum_clock_icon.png" alt="時計" />
             <h3>学習内訳時間</h3>
           </div>
           <div className={Curriculum.learn_detail_time_contents}>
             <div className={Curriculum.learn_detail_time_items1}>
-              <img src="/curriculum_desktop_icon.png" alt="" />
+              <img src="/curriculum_desktop_icon.png" alt="パソコン" />
               <p className={Curriculum.pc_ver}>カリキュラム学習時間 100時間</p>
             </div>
             <div className={Curriculum.learn_detail_time_items2}>
-              <img src="/curriculum_pen_icon.png" alt="" />
+              <img src="/curriculum_pen_icon.png" alt="ペン" />
               <p className={Curriculum.pc_ver}>課題学習時間 41時間</p>
             </div>
             <div className={Curriculum.learn_detail_time_items3}>
-              <img src="/curriculum_portfolio_icon.png" alt="" />
+              <img src="/curriculum_portfolio_icon.png" alt="資料" />
               <p className={Curriculum.pc_ver}>
                 ポートフォリオ作成
                 <br />
@@ -168,52 +168,54 @@ export default function Home() {
             </div>
           </div>
           <div className={Curriculum.sp_ver}>
-            <div className={Curriculum.learn_detail_time_items1_sp}>
-              <img src="/curriculum_sp_desktop_icon.png" alt="" />
-              <p>カリキュラム学習 100時間</p>
-            </div>
-            <div className={Curriculum.learn_detail_time_items2_sp}>
-              <img src="/curriculum_sp_pen_icon.png" alt="" />
-              <p>課題学習 41時間</p>
-            </div>
-            <div className={Curriculum.learn_detail_time_items3_sp}>
-              <img src="/curriculum_sp_portfolio_icon.png" alt="" />
-              <p>ポートフォリオ作成 30〜50時間</p>
+            <div className={Curriculum.learn_detail_time_contents_sp}>
+              <div className={Curriculum.learn_detail_time_items1_sp}>
+                <img src="/curriculum_sp_desktop_icon.png" alt="パソコン" />
+                <p>カリキュラム学習 100時間</p>
+              </div>
+              <div className={Curriculum.learn_detail_time_items2_sp}>
+                <img src="/curriculum_sp_pen_icon.png" alt="ペン" />
+                <p>課題学習 41時間</p>
+              </div>
+              <div className={Curriculum.learn_detail_time_items3_sp}>
+                <img src="/curriculum_sp_portfolio_icon.png" alt="資料" />
+                <p>ポートフォリオ作成 30〜50時間</p>
+              </div>
             </div>
           </div>
         </div>
 
         <div className={Curriculum.three_step}>
           <div className={Curriculum.pc_ver}>
-            <img src="/curriculum_step1.png" alt="" className={Curriculum.badge} />
+            <img src="/curriculum_step1.png" alt="丁寧に解説された教材" className={Curriculum.badge} />
 
-            <img src="/arrow_right.png" alt="" className={Curriculum.arrow} />
+            <img src="/arrow_right.png" alt="下矢印" className={Curriculum.arrow} />
 
-            <img src="/curriculum_step2.png" alt="" className={Curriculum.badge} />
+            <img src="/curriculum_step2.png" alt="各理解度を深める課題" className={Curriculum.badge} />
 
-            <img src="/arrow_right.png" alt="" className={Curriculum.arrow} />
+            <img src="/arrow_right.png" alt="下矢印" className={Curriculum.arrow} />
 
-            <img src="/curriculum_step3.png" alt="" className={Curriculum.badge} />
+            <img src="/curriculum_step3.png" alt="最終課題・ポートフォリオ" className={Curriculum.badge} />
           </div>
           <div className={Curriculum.sp_ver}>
-            <img src="/curriculum_sp_three_step.png" alt="" />
+            <img src="/curriculum_sp_three_step.png" alt="スリーステップ" />
           </div>
         </div>
 
         <div className={Curriculum.acquired_skills}>
           <h3>身につくスキル</h3>
           <div className={Curriculum.pc_ver}>
-            <div className={Curriculum.acquired_skills_contents}>
+            <div className={Curriculum.acquired_skills_pc_contents}>
               <div className={Curriculum.acquired_skills_content}>
                 <div className={Curriculum.acquired_skills_content_img}>
-                  <img src="/curriculum_htmlcss_icon.png" alt="" />
+                  <img src="/curriculum_htmlcss_icon.png" alt="HTML/CSS" />
                 </div>
                 <p>HTML/CSS</p>
               </div>
 
               <div>
                 <div className={Curriculum.acquired_skills_content_img_ruby}>
-                  <img src="/curriculum_ruby_icon.png" alt="" />
+                  <img src="/curriculum_ruby_icon.png" alt="Ruby" />
                 </div>
                 <p>
                   Ruby
@@ -224,14 +226,14 @@ export default function Home() {
 
               <div>
                 <div className={Curriculum.acquired_skills_content_img}>
-                  <img src="/curriculum_web_icon.png" alt="" />
+                  <img src="/curriculum_web_icon.png" alt="Web" />
                 </div>
                 <p>Webへの理解</p>
               </div>
 
               <div>
                 <div className={Curriculum.acquired_skills_content_img}>
-                  <img src="/curriculum_code_icon.png" alt="" />
+                  <img src="/curriculum_code_icon.png" alt="プログラミング" />
                 </div>
                 <p>
                   プログラムへの
@@ -242,7 +244,7 @@ export default function Home() {
 
               <div>
                 <div className={Curriculum.acquired_skills_content_img}>
-                  <img src="/curriculum_gear_icon.png" alt="" />
+                  <img src="/curriculum_gear_icon.png" alt="歯車" />
                 </div>
                 <p>
                   開発フローへの
@@ -253,7 +255,9 @@ export default function Home() {
             </div>
           </div>
           <div className={Curriculum.sp_ver}>
-            <img src="/curriculum_acquired_skills.png" alt="" />
+            <div className={Curriculum.acquired_skills_sp_contents}>
+              <img src="/curriculum_acquired_skills.png" alt="身につくスキル5つ" />
+            </div>
           </div>
         </div>
 
