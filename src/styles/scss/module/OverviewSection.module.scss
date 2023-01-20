@@ -1,0 +1,91 @@
+@use "src/styles/scss/utils/index.scss" as *;
+
+.overview_section {
+  background-image: url("/dot.png");
+  background-size: 6px 6px;
+  padding: 40px 0;
+
+  @include mq(sp) {
+    padding: calcVw(40) 0;
+  }
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 6.6666666667%;
+
+  @include mq(l) {
+    width: 93.75%;
+    padding: 0;
+  }
+
+  @include mq(xl) {
+    width: 960px;
+  }
+
+  @include mq(sp) {
+    width: 100%;
+  }
+}
+
+.overview_title_img {
+  width: 537px;
+  margin: 0 auto;
+  @include mq(sp) {
+    display: none;
+  }
+}
+
+.sp_overview_title_img {
+  display: none;
+  @include mq(sp) {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.overview_img_list {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 20px;
+
+  @include mq(sp) {
+    display: flex;
+    flex-direction: column;
+    margin-top: calcVw(20);
+    gap: calcVw(20);
+  }
+
+  div {
+    @include mq(sp) {
+      width: 90%;
+      margin: auto;
+    }
+  }
+
+  p,
+  span {
+    color: white;
+    font-size: 12px;
+    line-height: 1.5;
+    @include mq(sp) {
+      font-size: 3.2vw;
+    }
+  }
+
+  .text1 {
+    display: flex;
+    margin-top: 15px;
+    @include mq(sp) {
+      margin-top: 0;
+    }
+  }
+
+  .text2 {
+    display: flex;
+  }
+}
