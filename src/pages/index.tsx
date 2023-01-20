@@ -18,14 +18,17 @@ export default function Home() {
               />
               <img
                 src="overview_text_title_spver.png"
-                alt=""
+                alt="就活対策のために設計された専用コース"
                 className={OverviewSection.sp_overview_title_img}
               />
             </div>
 
             <div className={OverviewSection.overview_img_list}>
               <div className={OverviewSection.list}>
-                <img src="overview_image_01.png" alt="" />
+                <img
+                  src="overview_image_01.png"
+                  alt="大学1~4年までどの学年でも受講中"
+                />
 
                 <div className={OverviewSection.text1}>
                   <span>※</span>
@@ -36,7 +39,10 @@ export default function Home() {
               </div>
 
               <div className={OverviewSection.list}>
-                <img src="overview_image_02.png" alt="" />
+                <img
+                  src="overview_image_02.png"
+                  alt="就職対策講義エントリーシート添削求人紹介サポート"
+                />
                 <div className={OverviewSection.text2}>
                   <span>※</span>
                   <p>
@@ -46,7 +52,10 @@ export default function Home() {
               </div>
 
               <div className={OverviewSection.list}>
-                <img src="overview_image_03.png" alt="" />
+                <img
+                  src="overview_image_03.png"
+                  alt="学割適用と安心の料金制度"
+                />
               </div>
             </div>
           </div>
