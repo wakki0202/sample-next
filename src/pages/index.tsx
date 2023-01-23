@@ -19,24 +19,24 @@ export default function Home() {
             <a className={CtaSection.cta_btn_link}>
               <img
                 src="img/cta_section_balloon.png"
-                alt=""
+                alt="気軽に相談OK"
                 className={CtaSection.balloon_img}
               />
               <img
                 src="img/cta_section_men.png"
-                alt=""
+                alt="パソコンを操作してる男性"
                 className={CtaSection.men_img}
               />
 
               <div className={CtaSection.ctn_btn_content}>
                 <img
                   src="img/cta_section_btn_txt.png"
-                  alt=""
+                  alt="無料相談に申し込む"
                   className={CtaSection.text_img}
                 />
                 <img
                   src="img/cta_section_arrow.png"
-                  alt=""
+                  alt="下向き印"
                   className={CtaSection.arrow_img}
                 />
               </div>
@@ -58,19 +58,19 @@ export default function Home() {
             <div className={CtaSection.comment_img_list}>
               <img
                 src="img/cta_section_comment_01.png"
-                alt=""
+                alt="無料体験のコメント"
                 className={CtaSection.comment_img}
               />
 
               <img
                 src="img/cta_section_comment_02.png"
-                alt=""
+                alt="無料体験のコメント"
                 className={CtaSection.comment_img}
               />
 
               <img
                 src="img/cta_section_comment_03.png"
-                alt=""
+                alt="無料体験のコメント"
                 className={CtaSection.comment_img}
               />
             </div>
