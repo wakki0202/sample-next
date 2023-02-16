@@ -9,12 +9,12 @@ export default function Home() {
     <LayoutNew header={<></>} footer={<></>}>
       <div>
         <section className={recommend_section.recommend_section}>
-          <div className={recommend_section.recommend_wrap}>
+          <div className={recommend_section.inner}>
             <div className={recommend_section.pc_style}>
               <div>
                 <img
                   src="/recommend_text_title_1440px.png"
-                  alt=""
+                  alt="このコースにおすすめの人"
                   className={recommend_section.recommend_title_img}
                 />
               </div>
@@ -37,14 +37,14 @@ export default function Home() {
                   <li>
                     <img
                       src="/recommend_polygon_right.svg"
-                      alt=""
+                      alt="右向き三角"
                       className={recommend_section.recommend_polygon}
                     />
                   </li>
                   <li>
                     <img
                       src="/recommend_image_1.png"
-                      alt=""
+                      alt="大学1〜4年生・大学生OK"
                       className={recommend_section.recommend_img}
                     />
                   </li>
@@ -67,14 +67,14 @@ export default function Home() {
                   <li>
                     <img
                       src="/recommend_polygon_right.svg"
-                      alt=""
+                      alt="右向き三角"
                       className={recommend_section.recommend_polygon}
                     />
                   </li>
                   <li>
                     <img
                       src="/recommend_image_2.png"
-                      alt=""
+                      alt="文系でも理系でもOK"
                       className={recommend_section.recommend_img}
                     />
                   </li>
@@ -101,14 +101,14 @@ export default function Home() {
                   <li>
                     <img
                       src="/recommend_polygon_right.svg"
-                      alt=""
+                      alt="右向き三角"
                       className={recommend_section.recommend_polygon}
                     />
                   </li>
                   <li>
                     <img
                       src="/recommend_image_3.png"
-                      alt=""
+                      alt="独学で挫折した人もOK"
                       className={recommend_section.recommend_img}
                     />
                   </li>
@@ -120,7 +120,7 @@ export default function Home() {
               <div>
                 <img
                   src="/recommend_text_title_375px.png"
-                  alt=""
+                  alt="このコースにおすすめの人"
                   className={recommend_section.sp_recommend_title_img}
                 />
               </div>
@@ -142,14 +142,14 @@ export default function Home() {
                   <li>
                     <img
                       src="/recommend_polygon_bottom.png"
-                      alt=""
+                      alt="下向き三角"
                       className={recommend_section.sp_recommend_polygon}
                     />
                   </li>
                   <li>
                     <img
                       src="/recommend_image_1.png"
-                      alt=""
+                      alt="大学1〜4年生・大学院生OK"
                       className={recommend_section.sp_recommend_img}
                     />
                   </li>
@@ -172,14 +172,14 @@ export default function Home() {
                   <li>
                     <img
                       src="/recommend_polygon_bottom.png"
-                      alt=""
+                      alt="下向き三角"
                       className={recommend_section.sp_recommend_polygon}
                     />
                   </li>
                   <li>
                     <img
                       src="/recommend_image_2.png"
-                      alt=""
+                      alt="文系でも理系でもOK"
                       className={recommend_section.sp_recommend_img}
                     />
                   </li>
@@ -206,14 +206,14 @@ export default function Home() {
                   <li>
                     <img
                       src="/recommend_polygon_bottom.png"
-                      alt=""
+                      alt="下向き三角"
                       className={recommend_section.sp_recommend_polygon}
                     />
                   </li>
                   <li>
                     <img
                       src="/recommend_image_3.png"
-                      alt=""
+                      alt="独学で挫折した人でもOK"
                       className={recommend_section.sp_recommend_img}
                     />
                   </li>

@@ -3,7 +3,7 @@
 .recommend_section {
   background-color: #f1574d;
 
-  .recommend_wrap {
+  .inner {
     background-color: white;
     background-image: url("/grid_bg.png");
     width: 95%;
@@ -26,7 +26,7 @@
 
       @include mq(sp) {
         display: block;
-        padding: 5.3333333333vw 5.3333333333vw 14.6666666667vw;
+        padding: 5.3vw 5.3vw 14.6vw;
         width: 100%;
       }
     }
@@ -37,7 +37,7 @@
     margin: 0 auto 50px;
 
     @include mq(sp) {
-      margin-bottom: calcVw(50);
+      margin: 0 auto calcVw(50);
     }
   }
 
