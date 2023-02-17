@@ -1,0 +1,149 @@
+@use "src/styles/scss/utils/index.scss" as *;
+
+.recommend_section {
+  background-color: #f1574d;
+
+  .inner {
+    background-color: white;
+    background-image: url("/grid_bg.png");
+    width: 95%;
+    margin: 0 auto;
+
+    @include mq(sp) {
+      width: 100%;
+    }
+
+    .pc_style {
+      padding-top: 40px;
+      padding-bottom: 80px;
+      @include mq(sp) {
+        display: none;
+      }
+    }
+
+    .sp_style {
+      display: none;
+
+      @include mq(sp) {
+        display: block;
+        padding: 5.3vw 5.3vw 14.6vw;
+        width: 100%;
+      }
+    }
+  }
+
+  .recommend_title_img {
+    width: 735px;
+    margin: 0 auto 50px;
+
+    @include mq(sp) {
+      margin: 0 auto calcVw(50);
+    }
+  }
+
+  .recommend_img_list {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 60px;
+    gap: 60px;
+    padding: 20px;
+
+    .recommend_container {
+      width: 58%;
+      margin: auto;
+    }
+  }
+
+  .recommend_img_list1,
+  .recommend_img_list2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .recommend_img_list3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .recommend_polygon {
+    width: 21px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .recommend_box {
+    border: 3px solid #000;
+    border-radius: 8px;
+  }
+
+  .bg_black {
+    background: #000;
+    p {
+      color: white;
+      font-size: 2.4rem;
+      padding: 10px 20px;
+      font-weight: 700;
+      text-align: center;
+      line-height: 1.4;
+      letter-spacing: -0.04em;
+
+      @include mq(sp) {
+        padding: 2.6666666667vw 8vw;
+        font-size: 6.4vw;
+      }
+    }
+  }
+
+  .recommend_text {
+    padding: 20px;
+
+    @include mq(sp) {
+      padding: 5.3333333333vw 6.6666666667vw;
+    }
+
+    p {
+      font-size: 1.6rem;
+
+      @include mq(sp) {
+        font-size: 4.26vw;
+      }
+    }
+  }
+
+  .recommend_frame {
+    width: 472px;
+  }
+
+  .recommend_img {
+    width: 365px;
+  }
+
+  .sp_recommend_title_img {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .sp_recommend_img_list {
+    .sp_recommend_img_list1,
+    .sp_recommend_img_list2 {
+      margin-bottom: 80px;
+    }
+
+    .sp_recommend_polygon {
+      width: 10%;
+      margin: auto;
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+  }
+}
