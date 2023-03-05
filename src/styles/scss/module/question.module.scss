@@ -1,0 +1,101 @@
+@use "src/styles/scss/utils/index.scss" as *;
+
+.tablet_ver {
+  display: none;
+
+  @include mq(tablet) {
+    display: block;
+  }
+}
+
+.wrapper {
+  padding: 80px 20px;
+
+  @include mq(tablet) {
+    padding: 20px 0;
+  }
+
+  .title {
+    img {
+      width: 377px;
+      margin: auto;
+    }
+  }
+
+  .subtitle {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #222222;
+    font-weight: normal;
+
+    @include mq(tablet) {
+      padding-top: calcVw(20);
+    }
+  }
+
+  .q_and_a_contents {
+    display: flex;
+    gap: 10px;
+    max-width: 1050px;
+    justify-content: center;
+    margin: auto;
+    padding-top: 40px;
+
+    .left_contents {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .right_contents {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      @include mq(tablet) {
+        display: none;
+      }
+    }
+
+    .q_and_a_box {
+      max-width: 515px;
+      border: 3px solid #000;
+      border-radius: 8px;
+      padding: 20px 30px;
+
+      @include mq(tablet) {
+        max-width: calcVw(335);
+      }
+
+      img {
+        width: 50px;
+      }
+      .q_line {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+
+        p {
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 1.5;
+        }
+      }
+
+      .a_line {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+        padding-top: 16px;
+        margin-top: 16px;
+        border-top: 1px solid #c4c4c4;
+
+        p {
+          font-size: 16px;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}
