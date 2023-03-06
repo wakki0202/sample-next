@@ -1,0 +1,278 @@
+@use "src/styles/scss/utils/index.scss" as *;
+
+.wrap {
+  padding: 80px 0;
+
+  @include mq(tablet) {
+    padding: calcVw(30) calcVw(20);
+  }
+
+  .title {
+    position: relative;
+    font-size: 48px;
+    font-weight: 900;
+    padding-bottom: 16px;
+    border-bottom: 4px solid #efefef;
+    max-width: 1000px;
+    margin: auto;
+
+    @include mq(tablet) {
+      max-width: calcVw(335);
+      width: calcVw(335);
+      margin: auto;
+      font-size: calcVw(28);
+      padding-bottom: calcVw(8);
+    }
+  }
+
+  .title:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 60px;
+    border-bottom: 4px solid #e13d5d;
+
+    @include mq(tablet) {
+      border-bottom: 4px solid #37c4ad;
+      width: calcVw(50);
+    }
+  }
+
+  .subtitle {
+    display: none;
+
+    @include mq(tablet) {
+      display: block;
+      font-size: calcVw(16);
+      text-align: center;
+      padding-top: calcVw(16);
+      line-height: 1.6;
+    }
+  }
+
+  .contents {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: auto;
+    padding-top: 71px;
+
+    @include mq(tablet) {
+      max-width: auto;
+      padding-top: calcVw(30);
+      gap: calcVw(30);
+    }
+
+    .first_line {
+      display: flex;
+      gap: 30px;
+
+      @include mq(tablet) {
+        flex-direction: column;
+      }
+
+      .content {
+        max-width: 485px;
+        width: 485px;
+        height: 260px;
+        border: 1px solid #f0f0f0;
+        border-radius: 8px;
+        filter: drop-shadow(3px 3px 3px #f0f0f0);
+
+        @include mq(tablet) {
+          max-width: calcVw(335);
+          width: calcVw(335);
+          height: auto;
+          margin: auto;
+        }
+
+        .question {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          padding: 16px 24px;
+          background-color: #f0f0f0;
+          font-size: 16px;
+          color: #333;
+          font-weight: bold;
+
+          @include mq(tablet) {
+            gap: calcVw(8);
+            padding: calcVw(16) calcVw(15);
+            font-size: calcVw(14);
+          }
+
+          .q {
+            width: 42px;
+            padding: 9.5px 0;
+            text-align: center;
+            font-size: 23px;
+            background-color: #37c4ad;
+            color: white;
+            border-radius: 50%;
+
+            @include mq(tablet) {
+              width: calcVw(35);
+              padding: calcVw(7.5) 0;
+              font-size: calcVw(19.5);
+            }
+          }
+
+          p {
+            letter-spacing: 0.005em;
+            @include mq(tablet) {
+              width: calcVw(261);
+            }
+          }
+        }
+
+        .answer {
+          display: flex;
+          gap: 16px;
+          align-items: flex-start;
+          padding: 20px 24px;
+          font-size: 16px;
+
+          @include mq(tablet) {
+            gap: calcVw(8);
+            padding: calcVw(16) calcVw(15);
+          }
+
+          .a {
+            font-weight: bold;
+            width: 42px;
+            padding: 9.5px 0;
+            text-align: center;
+            font-size: 23px;
+            background-color: #e13d5d;
+            color: white;
+            border-radius: 50%;
+
+            @include mq(tablet) {
+              width: calcVw(35);
+              padding: calcVw(7.5) 0;
+              font-size: calcVw(19.5);
+            }
+          }
+
+          p {
+            width: 379px;
+            line-height: 1.8;
+            letter-spacing: 0.005em;
+
+            @include mq(tablet) {
+              width: calcVw(261);
+              font-size: calcVw(14);
+            }
+          }
+        }
+      }
+    }
+
+    .second_line {
+      display: flex;
+      gap: 30px;
+
+      @include mq(tablet) {
+        flex-direction: column;
+      }
+
+      .content {
+        max-width: 485px;
+        width: 485px;
+        height: 373px;
+        border: 1px solid #f0f0f0;
+        border-radius: 8px;
+
+        @include mq(tablet) {
+          max-width: calcVw(335);
+          width: calcVw(335);
+          height: auto;
+          margin: auto;
+        }
+
+        .question {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          padding: 16px 24px;
+          background-color: #f0f0f0;
+          font-size: 16px;
+          color: #333;
+          font-weight: bold;
+
+          @include mq(tablet) {
+            gap: calcVw(8);
+            padding: calcVw(16) calcVw(15);
+            font-size: calcVw(14);
+          }
+
+          .q {
+            font-size: 23px;
+            width: 42px;
+            padding: 9.5px 0;
+            text-align: center;
+            font-size: 23px;
+            background-color: #37c4ad;
+            color: white;
+            border-radius: 50%;
+            @include mq(tablet) {
+              width: calcVw(35);
+              padding: calcVw(7.5) 0;
+              font-size: calcVw(19.5);
+            }
+          }
+
+          p {
+            letter-spacing: 0.005em;
+            @include mq(tablet) {
+              width: calcVw(261);
+            }
+          }
+        }
+
+        .answer {
+          display: flex;
+          gap: 16px;
+          align-items: flex-start;
+          padding: 20px 24px;
+          font-size: 16px;
+
+          @include mq(tablet) {
+            gap: calcVw(8);
+            padding: calcVw(16) calcVw(15);
+          }
+
+          .a {
+            font-weight: bold;
+            width: 42px;
+            padding: 9.5px 0;
+            text-align: center;
+            font-size: 23px;
+            background-color: #e13d5d;
+            color: white;
+            border-radius: 50%;
+
+            @include mq(tablet) {
+              width: calcVw(35);
+              padding: calcVw(7.5) 0;
+              font-size: calcVw(19.5);
+            }
+          }
+
+          p {
+            width: 379px;
+            line-height: 1.8;
+            letter-spacing: 0.005em;
+            @include mq(tablet) {
+              width: calcVw(261);
+              font-size: calcVw(14);
+            }
+          }
+        }
+      }
+    }
+  }
+}
